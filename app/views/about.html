@@ -1,0 +1,38 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL operating manual
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/header.html" %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <p class="govuk-body govuk-!-font-size-24">National Emergencies Support Line is a free service for people access support in emergencies.</p>
+
+      <p class="govuk-body">The service is operated by Victim Support, British Red Cross and Samaritans.</p>
+
+        <p class="govuk-body">Call the free helpline:</p>
+        <p class="govuk-body">{% include "includes/phone-number.html" %}</p>
+        <p class="govuk-body">Available 24 hours a day, every day of the year.</p>
+
+        <h3 class="govuk-heading-m">Advice and support available through the service</h3>
+          <p class="govuk-body">Speak to trained adviser for support and advice, including:&nbsp;</p>
+          <ul class="govuk-list govuk-list--bullet">
+              <li>emotional support</li>
+              <li>where to get supplies like food and clothing</li>
+              <li>advice on getting shelter and temporary accommodation</li>
+              <li>advice on getting counselling services</li>
+              <li>advice to getting impartial insurance advice</li>
+              <li>advice on getting any financial support available</li>
+              <li>advice on evacuating your home</li>
+          </ul>
+
+    </div>
+</div>
+
+{% endblock %}
