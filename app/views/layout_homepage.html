@@ -18,21 +18,23 @@
 
 {% block header %}
 {% include "includes/header.html" %}
-<header class="govuk-header " role="banner" data-module="govuk-header" style="background-color: #0b0c0c;">
-  <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px;">
-  	<br>
-  	<div class="govuk-grid-row">
-    	<div class="govuk-grid-column-two-thirds">
-	      <h1 class="govuk-heading-l" style="color: #ffffff;">
-	        Information to operate and work with the National Emergencies Support Line service
-	      </h1>
-	      <br>
-	    </div>
-	</div>
-  </div>
+  <header class="govuk-header " role="banner" data-module="govuk-header" style="background-color: #0b0c0c;">
+    <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px;">
+    	<br>
+    	<div class="govuk-grid-row">
+      	<div class="govuk-grid-column-two-thirds">
+  	      <h1 class="govuk-heading-l" style="color: #ffffff;">
+  	        Information to operate and work with the National Emergencies Support Line service
+  	      </h1>
+  	      <br>
+  	    </div>
+  	</div>
+    </div>
 </header>
 {% endblock %}
-{% block footer %}{% endblock %}
+{% block footer %}
+  {% include "includes/footer.html" %}
+{% endblock %}
 
 {% block bodyEnd %}
   {% include "includes/scripts.html" %}
