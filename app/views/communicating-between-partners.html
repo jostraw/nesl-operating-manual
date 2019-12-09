@@ -1,0 +1,35 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Communications between partners</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Communications between partners</h1>
+
+      <p>Teams from Victim Support, British Red Cross and Samaritans will communicate using an existing WhatsApp group</a>.</p>
+
+      <p>If you need to join the WhatsApp group email <span class="govuk-!-font-weight-bold">{% include "includes/contact-email-address.html" %}</span>.</p>
+
+    </div>
+</div>
+
+{% endblock %}
