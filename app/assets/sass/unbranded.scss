@@ -46,6 +46,12 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   padding-bottom: 5px;
 }
 
+@media (max-width: 700px) {
+    #hide-on-mobile {
+        display: none;
+    }
+}
+
 // Step by step navigation code
 
 // Based on https://github.com/alphagov/govuk_publishing_components/blob/v9.3.6/app/assets/stylesheets/govuk_publishing_components/components/_step-by-step-nav.scss
