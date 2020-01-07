@@ -1,0 +1,71 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/comms-and-decisions/templates">Templates</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Text message</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Text message template</h1>
+
+      <p class="govuk-body">Use this template to text people about the National Emergencies Support Line:</p>
+
+      <div class="govuk-panel govuk-panel--confirmation" style="background-color: #ffffff; border: 2px solid #0b0c0c; text-align: left;">
+        <div class="govuk-panel__body govuk-!-font-size-27" style="color: #0b0c0c">
+          If you have been affected by [emergency-name] you can speak to someone to get support. 
+        </div>
+        <br>
+        <div class="govuk-panel__body govuk-!-font-size-27" style="color: #0b0c0c">
+          Call free 0808 802 2000. Open 24/7. Run by Red Cross and Victim Support.
+        </div>
+      </div>
+
+      <p style="display: none;" id="p1">Hello, I'm TEXT 1</p>
+
+      <button id="CopyButton" data-text-swap="Template codied" class="govuk-button black-button govuk-button--secondary" onclick="copyToClipboard('#p1')">Copy template</button>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="more-detail">
+          Can you provide more detail?
+        </label>
+        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+      </div>
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          <a href="#">Facebook template</a>
+        </li>
+        <li id="homepage-link-list">
+          <a href="#">Twitter template</a>
+        </li>
+        <li id="homepage-link-list">
+          <a href="#">Website template</a>
+        </li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}

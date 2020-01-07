@@ -23,3 +23,26 @@ $(document).ready(function(){
   console.log(today);
   $('#currentdate').html(today);
 });
+
+// 'Copy template' button script
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+// change 'Copy tempate' to 'Template copied'
+$("button").on("click", function() {
+  var el = $(this);
+  el.text() == el.data("text-swap") 
+    ? el.text(el.data("text-original")) 
+    : el.text(el.data("text-swap"));
+});
+
+$(".govuk-button").click(function () { 
+     if($(this).hasClass("govuk-button--secondary"))
+          $(".govuk-button").removeClass("govuk-button--secondary").addClass("yellow-button-clicked");               
+     $(this).addClass("govuk-button--secondary");        
+});
