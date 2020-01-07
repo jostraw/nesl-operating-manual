@@ -1,0 +1,59 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Comms and decisions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Templates</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Templates</h1>
+
+      <p class="govuk-body">Templates for partner organisations to promote the National Emergencies Support Line:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/comms-and-decisions/templates/facebook">Facebook</a></li>
+        <li><a href="/comms-and-decisions/templates/twitter">Twitter</a></li>
+        <li><a href="/comms-and-decisions/templates/text-message">Text message</a></li>
+      </ul>
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/communicating-between-partners.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/decision-making.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/promoting-the-service.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/working-with-net.html" %}
+        </li>  
+      </ul>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}
