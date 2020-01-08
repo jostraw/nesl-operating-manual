@@ -25,13 +25,16 @@ $(document).ready(function(){
 });
 
 // 'Copy template' button script
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
+function copyFunction() {
+  const copyText = document.getElementById("myInput").textContent;
+  const textArea = document.createElement('textarea');
+  textArea.textContent = copyText;
+  document.body.append(textArea);
+  textArea.select();
   document.execCommand("copy");
-  $temp.remove();
 }
+
+document.getElementById('button').addEventListener('click', copyFunction);
 
 // change 'Copy tempate' to 'Template copied'
 $("button").on("click", function() {
@@ -41,8 +44,21 @@ $("button").on("click", function() {
     : el.text(el.data("text-swap"));
 });
 
-$(".govuk-button").click(function () { 
-     if($(this).hasClass("govuk-button--secondary"))
-          $(".govuk-button").removeClass("govuk-button--secondary").addClass("yellow-button-clicked");               
-     $(this).addClass("govuk-button--secondary");        
+// change 'copy template' styling on click
+$(".copy-button").click(function () { 
+     if($(this).hasClass("black-button"))
+          $(".copy-button").removeClass("black-button").addClass("yellow-button-clicked");               
+     $(this).addClass("black-button");        
 });
+
+// test two
+function copyFunction() {
+  const copyText = document.getElementById("myInput").textContent;
+  const textArea = document.createElement('textarea');
+  textArea.textContent = copyText;
+  document.body.append(textArea);
+  textArea.select();
+  document.execCommand("copy");
+}
+
+document.getElementById('button').addEventListener('click', copyFunction);
