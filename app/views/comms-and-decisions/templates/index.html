@@ -24,12 +24,28 @@
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">Templates</h1>
 
-      <p class="govuk-body">Templates for partner organisations to promote the National Emergencies Support Line:</p>
+      <p class="govuk-body">Templates for promoting the National Emergencies Support Line:</p>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/comms-and-decisions/templates/facebook">Facebook</a></li>
-        <li><a href="/comms-and-decisions/templates/twitter">Twitter</a></li>
-        <li><a href="/comms-and-decisions/templates/text-message">Text message</a></li>
+        <li>
+          {% include "nav-links/comms-and-decisions/templates/facebook.html" %}
+        </li>
+        <li>
+          {% include "nav-links/comms-and-decisions/templates/twitter.html" %}
+        </li>
+        <li>
+          {% include "nav-links/comms-and-decisions/templates/website-banner.html" %}
+        </li>
+        <li>
+          {% include "nav-links/comms-and-decisions/templates/web-page.html" %}
+        </li>
+        <li>
+          {% include "nav-links/comms-and-decisions/templates/text-message.html" %}
+        </li>
+        <li>
+          {% include "nav-links/comms-and-decisions/templates/automated-voice.html" %}
+        </li>
+
       </ul>
 
       {% include "includes/related-content.html" %}
