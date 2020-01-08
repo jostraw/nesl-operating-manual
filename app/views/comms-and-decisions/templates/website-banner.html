@@ -15,7 +15,7 @@
         <a class="govuk-breadcrumbs__link" href="/comms-and-decisions/templates">Templates</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Text message</a>
+        <a class="govuk-breadcrumbs__link">Website banner</a>
       </li>
     </ol>
   </div>
@@ -25,23 +25,17 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">Text message template</h1>
+      <h1 class="govuk-heading-xl">Website banner template</h1>
 
-      <p class="govuk-body">Use this text to promote the {% include "includes/service-name.html" %} with text messages.</p>
+      <p class="govuk-body">Use this text to promote the {% include "includes/service-name.html" %} in the banner at the top of your website.</p>
 
       <div class="govuk-panel govuk-panel--confirmation copy-box">
         <div class="govuk-panel__body">
-          If you have been affected by <nobr>[emergency-name]</nobr> you can speak to someone to get support. 
-        </div>
-        <br>
-        <div class="govuk-panel__body">
-          Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cross and Victim Support.
+          If you have been affected by <nobr>[emergency-name]</nobr> call free {% include "includes/phone-number.html" %}
         </div>
       </div>
 
-<pre class="make-invisible" id="myInput">If you have been affected by <nobr>[emergency-name]</nobr> you can speak to someone to get support. 
-
-Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cross and Victim Support.</pre>
+<pre class="make-invisible" id="myInput">If you have been affected by <nobr>[emergency-name]</nobr> call free {% include "includes/phone-number.html" %}</pre>
       
       {% include "includes/copy-button.html" %}
 
@@ -55,10 +49,10 @@ Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cros
           {% include "nav-links/comms-and-decisions/templates/twitter.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/comms-and-decisions/templates/website-banner.html" %}
+          {% include "nav-links/comms-and-decisions/templates/web-page.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/comms-and-decisions/templates/web-page.html" %}
+          {% include "nav-links/comms-and-decisions/templates/text-message.html" %}
         </li>
         <li id="homepage-link-list">
           {% include "nav-links/comms-and-decisions/templates/automated-voice.html" %}
