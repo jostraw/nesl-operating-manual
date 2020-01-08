@@ -1,0 +1,71 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/comms-and-decisions/templates">Templates</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Facebook</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Facebook template</h1>
+
+      <p class="govuk-body">Use this text and image to promote the National Emergency Support Line on Facebook:</p>
+
+      <div class="govuk-panel govuk-panel--confirmation copy-box">
+        <div class="govuk-panel__body">
+          If you have been affected by <nobr>[#emergency-name]</nobr> you can speak to someone to get confidential advice and support. Including <nobr>[support-example-1]</nobr> and <nobr>[support-example-2]</nobr>.
+        </div>
+        <br>
+        <div class="govuk-panel__body">
+          Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cross and Victim Support.
+        </div>
+      </div>
+
+<pre class="make-invisible" id="myInput">If you have been affected by <nobr>[#emergency-name]</nobr> you can speak to someone to get confidential advice and support. Including <nobr>[support-example-1]</nobr> and <nobr>[support-example-2]</nobr>.
+
+Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cross and Victim Support.</pre>
+      
+      {% include "includes/copy-button.html" %}
+
+      <img src="/public/images/National-Emergencies-Support-Line-share-Facebook.jpg" style="width: 100%;" alt="A smiling woman wearing a phone headset">
+
+      <a class="govuk-button black-button" href="/public/images/National-Emergencies-Support-Line-share-Facebook.jpg" style="margin-top: 10px;" download>Download image</a>
+
+      {% include "includes/related-content.html" %}
+
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          <a href="#">Facebook template</a>
+        </li>
+        <li id="homepage-link-list">
+          <a href="#">Twitter template</a>
+        </li>
+        <li id="homepage-link-list">
+          <a href="#">Website template</a>
+        </li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}
