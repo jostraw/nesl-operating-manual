@@ -23,3 +23,42 @@ $(document).ready(function(){
   console.log(today);
   $('#currentdate').html(today);
 });
+
+// 'Copy template' button script
+function copyFunction() {
+  const copyText = document.getElementById("myInput").textContent;
+  const textArea = document.createElement('textarea');
+  textArea.textContent = copyText;
+  document.body.append(textArea);
+  textArea.select();
+  document.execCommand("copy");
+}
+
+document.getElementById('button').addEventListener('click', copyFunction);
+
+// change 'Copy tempate' to 'Template copied'
+$("button").on("click", function() {
+  var el = $(this);
+  el.text() == el.data("text-swap") 
+    ? el.text(el.data("text-original")) 
+    : el.text(el.data("text-swap"));
+});
+
+// change 'copy template' styling on click
+$(".copy-button").click(function () { 
+     if($(this).hasClass("black-button"))
+          $(".copy-button").removeClass("black-button").addClass("yellow-button-clicked");               
+     $(this).addClass("black-button");        
+});
+
+// test two
+function copyFunction() {
+  const copyText = document.getElementById("myInput").textContent;
+  const textArea = document.createElement('textarea');
+  textArea.textContent = copyText;
+  document.body.append(textArea);
+  textArea.select();
+  document.execCommand("copy");
+}
+
+document.getElementById('button').addEventListener('click', copyFunction);
