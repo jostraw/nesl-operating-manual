@@ -27,10 +27,7 @@ $(document).ready(function(){
 // 'Copy template' button script
 function copyFunction() {
   const copyText = document.getElementById("myInput").textContent;
-  const textArea = document.createElement('textarea');
   textArea.textContent = copyText;
-  document.body.append(textArea);
-  textArea.select();
   document.execCommand("copy");
 }
 
@@ -50,15 +47,3 @@ $(".copy-button").click(function () {
           $(".copy-button").removeClass("black-button").addClass("yellow-button-clicked");               
      $(this).addClass("black-button");        
 });
-
-// test two
-function copyFunction() {
-  const copyText = document.getElementById("myInput").textContent;
-  const textArea = document.createElement('textarea');
-  textArea.textContent = copyText;
-  document.body.append(textArea);
-  textArea.select();
-  document.execCommand("copy");
-}
-
-document.getElementById('button').addEventListener('click', copyFunction);
