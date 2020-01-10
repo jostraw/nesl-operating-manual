@@ -29,17 +29,15 @@
 
       <div class="govuk-panel govuk-panel--confirmation" style="background-color: #ffffff; border: 2px solid #0b0c0c">
         <div class="govuk-panel__body" style="color: #0b0c0c">
-          Call the free support line:<br><strong>{% include "includes/phone-number.html" %}</strong>
+          Call the free support line:<br><strong class="CopyThisText">{% include "includes/phone-number.html" %}</strong>
         </div>
         <br>
         <div class="govuk-panel__body" style="color: #0b0c0c">
           Available 24 hours a day,<br>every day of the year.
         </div>
       </div>
-
-<pre class="make-invisible" id="myInput">{% include "includes/phone-number.html" %}</pre>
       
-      <button id="button" data-text-swap="Phone number copied" class="govuk-button copy-button black-button">Copy phone number</button>
+      <button id="button" class="js-emailcopybtn govuk-button copy-button black-button CopyPhoneNumber">Copy phone number</button>
 
       {% include "includes/related-content.html" %}
       <ul class="govuk-list">

@@ -54,8 +54,21 @@ copyEmailBtn.addEventListener('click', function(event) {
     $this.toggleClass('js-emailcopybtn');
     if($this.hasClass('js-emailcopybtn')){
       $this.text('Copy template');     
-    } else {
+    } 
+    else {
       $this.text('Template copied');
+    }
+  });
+
+// Change 'Copy phone number' text to 'Phone number copied'
+  $('.CopyPhoneNumber').click(function(){
+    var $this = $(this);
+    $this.toggleClass('CopyPhoneNumber');
+    if($this.hasClass('CopyPhoneNumber')){
+      $this.text('Copy phone number');     
+    } 
+    else {
+      $this.text('Phone number copied');
     }
   });
 
