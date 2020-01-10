@@ -30,20 +30,13 @@
       <p class="govuk-body">Use this text to promote the {% include "includes/service-name.html" %} with automated voice messages.</p>
 
       <div class="govuk-panel govuk-panel--confirmation copy-box">
-        <div class="govuk-panel__body">
-          If you have been affected by <nobr>[emergency-name]</nobr> you can speak to someone to get support.  
-        </div>
-        <br>
-        <div class="govuk-panel__body">
+        <div class="govuk-panel__body CopyThisText">
+          If you have been affected by <nobr>[emergency-name]</nobr> you can speak to someone to get support. 
+          <br><br>
           Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cross and Victim Support. The number again {% include "includes/phone-number.html" %}   
         </div>
       </div>
 
-<pre class="make-invisible" id="myInput">If you have been affected by <nobr>[emergency-name]</nobr> you can speak to someone to get support.
-
-Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cross and Victim Support. The number again {% include "includes/phone-number.html" %}
-</pre>
-      
       {% include "includes/copy-button.html" %}
 
       {% include "includes/related-templates.html" %}
@@ -60,7 +53,7 @@ Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cros
         </li>
         <li id="homepage-link-list">
           {% include "nav-links/comms-and-decisions/templates/web-page.html" %}
-        </li>
+        </li>        
         <li id="homepage-link-list">
           {% include "nav-links/comms-and-decisions/templates/text-message.html" %}
         </li>

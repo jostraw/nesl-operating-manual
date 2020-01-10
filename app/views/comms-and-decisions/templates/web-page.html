@@ -30,42 +30,18 @@
       <p class="govuk-body">Use this text for a web page about the {% include "includes/service-name.html" %} on your organisation's website.</p>
 
       <div class="govuk-panel govuk-panel--confirmation copy-box">
-        <div class="govuk-panel__body">
+        <div class="govuk-panel__body CopyThisText">
           <strong>{% include "includes/service-name.html" %}</strong>  
-        </div>
-        <br>
-        <div class="govuk-panel__body"> 
+          <br><br>
           If you have been affected by <nobr>[emergency-name]</nobr> you can speak to someone to get support.  
-        </div>
-        <br>
-        <div class="govuk-panel__body">
+          <br><br>
           Call free {% include "includes/phone-number.html" %}. Open 24 hours a day. Run by British Red Cross and Victim Support.
-        </div>
-        <br>
-        <div class="govuk-panel__body">
+          <br><br>
           Confidential advice and support available, including:
-        </div>
-        <br>
-        <div class="govuk-panel__body">
-          <ul class="govuk-list govuk-list--bullet" style="margin-bottom: 0px;">
-            {% include "includes/advice-support-available.html" %}
-          </ul>
+          <br><br>
+          {% include "includes/advice-support-available.html" %}
         </div>
       </div>
-
-<pre class="make-invisible" id="myInput">{% include "includes/service-name.html" %}
-
-If you have been affected by <nobr>[emergency-name]</nobr> you can speak to someone to get support.
-
-Call free {% include "includes/phone-number.html" %}. Open 24/7. Run by Red Cross and Victim Support. The number again {% include "includes/phone-number.html" %}
-
-Emotional support
-Advice on evacuating your home
-Information on where to get supplies like food and clothing
-Support to access specialist services such as mental health, housing and finance
-Advice on getting any financial support available
-Support planning your next steps
-</pre>
       
       {% include "includes/copy-button.html" %}
 
@@ -82,10 +58,10 @@ Support planning your next steps
           {% include "nav-links/comms-and-decisions/templates/website-banner.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/comms-and-decisions/templates/web-page.html" %}
+          {% include "nav-links/comms-and-decisions/templates/text-message.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/comms-and-decisions/templates/text-message.html" %}
+          {% include "nav-links/comms-and-decisions/templates/automated-voice.html" %}
         </li>
       </ul>
 

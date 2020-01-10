@@ -24,25 +24,40 @@ $(document).ready(function(){
   $('#currentdate').html(today);
 });
 
-// 'Copy template' button script
-function copyFunction() {
-  const copyText = document.getElementById("myInput").textContent;
-  const textArea = document.createElement('textarea');
-  textArea.textContent = copyText;
-  document.body.append(textArea);
-  textArea.select();
-  document.execCommand("copy");
-}
+// Copy test
+var copyEmailBtn = document.querySelector('.js-emailcopybtn');  
+copyEmailBtn.addEventListener('click', function(event) {  
+  // Select the email link anchor text  
+  var emailLink = document.querySelector('.CopyThisText');  
+  var range = document.createRange();  
+  range.selectNode(emailLink);  
+  window.getSelection().addRange(range);  
 
-document.getElementById('button').addEventListener('click', copyFunction);
+  try {  
+    // Now that we've selected the anchor text, execute the copy command  
+    var successful = document.execCommand('copy');  
+    var msg = successful ? 'successful' : 'unsuccessful';  
+    console.log('Copy email command was ' + msg);  
+  } catch(err) {  
+    console.log('Oops, unable to copy');  
+  }  
 
-// change 'Copy tempate' to 'Template copied'
-$("button").on("click", function() {
-  var el = $(this);
-  el.text() == el.data("text-swap") 
-    ? el.text(el.data("text-original")) 
-    : el.text(el.data("text-swap"));
+  // Remove the selections - NOTE: Should use
+  // removeRange(range) when it is supported  
+  window.getSelection().removeAllRanges();  
 });
+
+
+// Change 'Copy template' text to 'Template copied'
+  $('.js-emailcopybtn').click(function(){
+    var $this = $(this);
+    $this.toggleClass('js-emailcopybtn');
+    if($this.hasClass('js-emailcopybtn')){
+      $this.text('Copy template');     
+    } else {
+      $this.text('Template copied');
+    }
+  });
 
 // change 'copy template' styling on click
 $(".copy-button").click(function () { 
