@@ -1,0 +1,55 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Transfer calls</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Who to transfer</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Who to transfer</h1>
+
+      <p class="govuk-body">When it is <a href="/comms-and-decisions/promoting-the-service">time to promote the support line</a> this is the criteria for transferring people.</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Anyone who feels affected by the major emergency. For example, someone who witnessed a terrorist attack.
+        </li>
+        <li>
+          People who would benefit from the <a href="/about/advice-support-available"> support and advice available</a> through the support line. For example, someone who had to evacuate their home due to a major flood. 
+        </li>
+      </ul>
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/decision-making.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/promoting-the-service.html" %}
+        </li>  
+      </ul>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}

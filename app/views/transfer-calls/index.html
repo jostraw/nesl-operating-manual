@@ -1,0 +1,58 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Transfer calls</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Transfer calls</h1>
+
+      <p class="govuk-body">If you run a phone line which people already contact in emergencies, you might want to transfer calls through to the National Emergencies Support Line.</p> 
+
+      <p>When it is <a href="/comms-and-decisions/promoting-the-service">time to promote the support line</a> this is how we recommend your organisation transfers calls.</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="/about/phone-number">What phone number to transfer to</a>
+        </li>
+        <li>
+          <a href="/transfer-calls/who-to-transfer">Who to transfer</a>
+        </li>
+        <li>
+         <a href="transfer-calls/what-to-say">What to say to your callers</a>
+        </li>
+      </ul>
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/decision-making.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/promoting-the-service.html" %}
+        </li>  
+      </ul>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}

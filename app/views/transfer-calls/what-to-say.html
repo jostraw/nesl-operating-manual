@@ -1,0 +1,64 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/transfer-calls">Transfer calls</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">What to say</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">What to say to your callers</h1>
+
+      <p class="govuk-body"></p> 
+
+      <p>When it is <a href="/comms-and-decisions/promoting-the-service">time to promote the support line</a> you can use this script to ask whether your caller wants to be transferred to the support line.</p>
+
+      <div class="govuk-panel govuk-panel--confirmation copy-box">
+        <div class="govuk-panel__body CopyThisText"> 
+          Before we finish I want to tell you about the National Emergencies Support Line; a free and confidential service run by the British Red Cross and Victim Support.
+          <br><br>
+          The support line is completely independent from us. Any information shared with them won't be shared with us.
+          <br><br>
+          It is for people affected by <nobr>[emergency-name]</nobr> to get advice and support, including <nobr>[support-example]</nobr> and <nobr>[support-example]</nobr>.
+          <br><br>
+          I can put you through now if you like?
+        </div>
+      </div>
+      
+      {% include "includes/copy-button.html" %}
+
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/decision-making.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/promoting-the-service.html" %}
+        </li>  
+      </ul>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}
