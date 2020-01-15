@@ -1,0 +1,57 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">When to promote</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">When to promote the support line</h1>
+
+      <p>The support line won’t be promoted in every emergency.</p>
+
+      <p>When it is promoted it will be during a major emergency. This will be agreed by:</p>  
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Victim Support </li>
+        <li>British Red Cross</li>
+      </ul>
+
+      <p>British Red Cross or Victim Support will recommend when to promote the support line. They will communicate this to your organisation through official channels during an emergency.</p>
+
+      <p><a href="/templates">Comms templates</a> are available for promoting the support line.</p>
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/communicating-between-partners.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/decision-making.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/working-with-net.html" %}
+        </li>  
+      </ul>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  NESL Operating Manual
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">When an emergency starts</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Working with National Emergencies Trust</h3>
+
+      <p class="govuk-body">Content to be added following conversations between <a href="https://nationalemergenciestrust.org.uk/">National Emergencies Trust</a> and British Red Cross. For example the process to refer people to access funds.</p>
+
+      {% include "includes/related-content.html" %}
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/communicating-between-partners.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/decision-making.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/promoting-the-service.html" %}
+        </li> 
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}
