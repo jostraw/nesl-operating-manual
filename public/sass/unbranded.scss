@@ -28,6 +28,21 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 	color: #0b0c0c;
 }
 
+#brc-header {
+  background-color: #ffffff; 
+  border: 0px 0px 0px 0px; 
+  padding-bottom: 10px;
+}
+
+#status-banner {
+  background-color: #f3f2f1; 
+  border: 0px 0px 0px 0px; 
+}
+
+#status-banner p {
+  margin-bottom: 10px;
+}
+
 #header-link a:hover {
 	text-decoration: underline;
 	color: #0b0c0c;
