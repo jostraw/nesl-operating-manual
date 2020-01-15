@@ -8,7 +8,7 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-one-half">
       
       <h3 class="govuk-heading-m">About the support line</h3>
       <ul class="govuk-list">
@@ -28,7 +28,7 @@
 
     </div>
 
-    <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-one-half">
       <h3 class="govuk-heading-m">Emergency starts</h3>
       <ul class="govuk-list">
         <li id="homepage-link-list">
@@ -52,7 +52,7 @@
       </ul>
     </div>
 
-    <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-one-half">
       <h3 class="govuk-heading-m">Communications and decision making</h3>
       <ul class="govuk-list">
         <li id="homepage-link-list">
@@ -62,14 +62,23 @@
           {% include "nav-links/comms-and-decisions/decision-making.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/comms-and-decisions/promoting-the-service.html" %}
-        </li>
-        <li id="homepage-link-list">
-          <a class="govuk-link govuk-link--no-visited-state" href="/comms-and-decisions/templates">Comms templates to promote the support line</a>
-        </li> 
-        <li id="homepage-link-list">
           {% include "nav-links/comms-and-decisions/working-with-net.html" %}
         </li>            
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-m">Promoting the support line</h3>
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/comms-and-decisions/promoting-the-service.html" %}
+        </li>       
+        <li id="homepage-link-list">
+          <a class="govuk-link" href="/comms-and-decisions/templates">Comms templates to promote the support line</a>
+        </li> 
+        <li id="homepage-link-list">
+          <a class="govuk-link" href="/transfer-calls">Transfer calls</a>
+        </li>           
       </ul>
     </div>
 
