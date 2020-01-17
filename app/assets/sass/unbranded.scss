@@ -15,7 +15,7 @@
 $govuk-global-styles: true;
 
 // Override the govuk-frontend font stack
-$govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+$govuk-font-family: 'Roboto', sans-serif;
 
 // Override the canvas background colour, which is normally grey to blend with
 // the GOV.UK footer.
@@ -23,25 +23,39 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "node_modules/govuk-frontend/govuk/all";
 
-#header-link a {
-	text-decoration: none; 
-	color: #0b0c0c;
-}
-
-#header-link a:hover {
-	text-decoration: underline;
-	color: #0b0c0c;
-}
-
 #brc-header {
   background-color: #ffffff; 
-  border-bottom: solid 0px white; 
+  border-bottom: solid 1px #b1b4b6; 
   padding-bottom: 10px;
 }
 
+#brc-header h1 {
+  color: #0b0c0c;
+}
+
+#header-link a {
+  text-decoration: none; 
+  color: #0b0c0c;
+  font-weight: 700;
+}
+
+#header-link a:hover {
+  text-decoration: underline;
+  color: #0b0c0c;
+}
+
 #home-banner {
-  background-color: #0b0c0c; 
-  border-bottom: solid 0px white; 
+  background-color: #ffffff; 
+  border-bottom: 1px solid #b1b4b6;
+  color: #ffffff;
+}
+
+#home-banner h1 {
+  margin-bottom: 20px;
+}
+
+#home-banner a {
+  color: #0b0c0c;
 }
 
 #status-banner {

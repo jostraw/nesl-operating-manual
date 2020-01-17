@@ -15,28 +15,26 @@
 {% block head %}
   {% include "includes/meta-tags.html" %}
   <link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block header %}
 {% include "includes/header.html" %}
 <header id="home-banner" class="govuk-header " role="banner" data-module="govuk-header">
-    <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px; padding-bottom: 30px; padding-top: 20px;">
+    <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px; padding-bottom: 40px; padding-top: 30px;">
     	<div class="govuk-grid-row">
       	<div class="govuk-grid-column-two-thirds">
-  	      <h1 class="govuk-heading-xl" style="color: #ffffff; margin-bottom: 20px;">
-  	        Instructions to set up and promote the National Emergencies Support Line
+  	      <h1 class="govuk-heading-xl">
+  	        Information to set up and work with the National Emergencies Support Line
   	      </h1>
-          <p class="govuk-phase-banner__content">
-            <strong class="govuk-tag govuk-phase-banner__content__tag" style="background-color: #fff; color: #0b0c0c">
-              beta
-            </strong>
-            <span class="govuk-phase-banner__text" style="color: #fff;">
-              This is a new manual – your <a style="color: #fff;" class="govuk-link" href="https://github.com/britishredcrosssociety/nesl-operating-manual/issues">feedback</a> will help us to improve it.
-            </span>
-          </p>
+          <p class="govuk-body">National Emergencies Support Line is a free service for people to access <a href="/advice-support-available">advice and support</a> in <a href="/decision-making">major emergencies</a>.</p>
+
+          <p class="govuk-body">The support line is run by</p>
+          {% include "includes/logos.html" %}
+          <br>
   	    </div>
+      </div>
   	</div>
-    </div>
 </header>
 {% endblock %}
 {% block footer %}

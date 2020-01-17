@@ -23,29 +23,49 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "node_modules/govuk-frontend/govuk/all";
 
-#header-link a {
-	text-decoration: none; 
-	color: #0b0c0c;
-}
-
 #brc-header {
-  background-color: #ffffff; 
-  border: 0px 0px 0px 0px; 
+  background-color: #DA0422; 
+  border-bottom: solid 0px #DA0422; 
   padding-bottom: 10px;
 }
 
-#status-banner {
-  background-color: #f3f2f1; 
-  border: 0px 0px 0px 0px; 
+#brc-header h1 {
+  color: #ffffff;
 }
 
-#status-banner p {
-  margin-bottom: 10px;
+#header-link a {
+  text-decoration: none; 
+  color: #ffffff;
 }
 
 #header-link a:hover {
-	text-decoration: underline;
-	color: #0b0c0c;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+#home-banner {
+  background-color: #ffffff; 
+  border-bottom: 1px solid #b1b4b6;
+  color: #ffffff;
+}
+
+#home-banner h1 {
+  margin-bottom: 20px;
+}
+
+#status-banner {
+  background: #f3f2f1;
+  padding-bottom: 10px;
+  border: solid 0px #fff;
+}
+
+#banner-contetainer {
+  border: solid 0px #fff;
+  margin-bottom: 0px;
+}
+
+#status-banner p {
+  margin-bottom: 0px;
 }
 
 #footer-link a {
