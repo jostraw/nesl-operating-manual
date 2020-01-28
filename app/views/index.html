@@ -10,21 +10,6 @@
   <div class="govuk-grid-row">
 
     <div class="govuk-grid-column-one-half">
-      <h3 class="govuk-heading-m">Signposting to the support line</h3>
-      <ul class="govuk-list">
-        <li id="homepage-link-list">
-          {% include "nav-links/when-to-promote.html" %}
-        </li>       
-        <li id="homepage-link-list">
-          {% include "nav-links/templates/index.html" %}
-        </li> 
-        <li id="homepage-link-list">
-          {% include "nav-links/transfer-calls/index.html" %}
-        </li>           
-      </ul>
-    </div>
-
-    <div class="govuk-grid-column-one-half">
       <h3 class="govuk-heading-m">About the support line</h3>
       <ul class="govuk-list">
         <li id="homepage-link-list">
@@ -34,11 +19,23 @@
           {% include "nav-links/phone-number.html" %}
         </li>
         <li id="homepage-link-list">
-          {% include "nav-links/opening-hours.html" %}
-        </li>
-        <li id="homepage-link-list">
           {% include "nav-links/advice-support-available.html" %}
         </li>
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-m">Communications and decisions</h3>
+      <ul class="govuk-list">
+        <li id="homepage-link-list">
+          {% include "nav-links/communicating-between-partners.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/decision-making.html" %}
+        </li>
+        <li id="homepage-link-list">
+          {% include "nav-links/working-with-net.html" %}
+        </li>            
       </ul>
     </div>
 
@@ -47,7 +44,7 @@
   <div class="govuk-grid-row">
 
     <div class="govuk-grid-column-one-half">
-      <h3 class="govuk-heading-m">Internal procedures</h3>
+      <h3 class="govuk-heading-m">Operating procedures</h3>
       <ul class="govuk-list">
         <li id="homepage-link-list">
           {% include "nav-links/who-answers-call.html" %}
@@ -71,17 +68,14 @@
     </div>
 
     <div class="govuk-grid-column-one-half">
-      <h3 class="govuk-heading-m">Internal communications and decisions</h3>
-      <ul class="govuk-list">
+      <h3 class="govuk-heading-m">Comms materials</h3>
+      <ul class="govuk-list">      
         <li id="homepage-link-list">
-          {% include "nav-links/communicating-between-partners.html" %}
-        </li>
+          {% include "nav-links/templates/index.html" %}
+        </li> 
         <li id="homepage-link-list">
-          {% include "nav-links/decision-making.html" %}
-        </li>
-        <li id="homepage-link-list">
-          {% include "nav-links/working-with-net.html" %}
-        </li>            
+          {% include "nav-links/transfer-calls/index.html" %}
+        </li>           
       </ul>
     </div>
 
