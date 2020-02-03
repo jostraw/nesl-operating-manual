@@ -44,6 +44,16 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   color: #0b0c0c;
 }
 
+#phase-tag {
+  color: #0b0c0c; 
+  background-color: transparent; 
+  border: solid 1px #0b0c0c;
+}
+
+#phase-banner a {
+  color: #0b0c0c;
+}
+
 #home-banner {
   background-color: #ffffff; 
   border-bottom: 1px solid #b1b4b6;
